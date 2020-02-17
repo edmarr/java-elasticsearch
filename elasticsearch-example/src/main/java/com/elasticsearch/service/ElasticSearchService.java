@@ -93,9 +93,8 @@ public class ElasticSearchService {
             request.source(search);
             request.indices(indexs.split(","));
             request.types(types.split(","));
-            StringBuilder sb = new StringBuilder();
-            SearchResponse response = Config.makeConnection().search(request);
 
+            SearchResponse response = Config.makeConnection().search(request);
             List<String> list = new ArrayList<>();
             
             for(SearchHit obj: response.getHits().getHits()){

@@ -121,3 +121,6 @@ buildNumber.properties
 .history
 
 # End of https://www.gitignore.io/api/java,maven,eclipse,visualstudiocode
+.vscode/settings.json
+elasticsearch-example/.vscode/settings.json
+elasticsearch-example/.vscode/settings.json
